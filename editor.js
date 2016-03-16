@@ -131,7 +131,7 @@ var MIDI_Editor = new function() {
     // keyboard confirms that notes have been saved and passes down projectId 
     Editor.prototype.notesSaved = function(pid){
         this.projectId = pid;
-        console.log(pid);
+        //console.log(pid);
     }
     
     // load button was pressed, so ask keyboard to load
@@ -143,7 +143,7 @@ var MIDI_Editor = new function() {
     Editor.prototype.notesLoaded = function(notes, pid){
         this.midiWorkspace.notesLoaded(notes);
         this.projectId = pid;
-        console.log(this.projectId);
+        //console.log(this.projectId);
     }
     
     // new project was created so reset the project id
